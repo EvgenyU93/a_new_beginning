@@ -6,19 +6,81 @@
     <title>Эльдорадость</title>
     <meta keywords="ремонт бытовой техники, обслуживание техники, бытовая техника">
     <meta description="Сервис ремонта и обслуживания бытовой техники">
+    <link rel="stylesheet" href="">
 </head>
 <body>
-    <header>
-        <h1>
-
-        </h1>
-        <nav>
-            
-        </nav>
+    <header class="header">
+        <button class="header__burger"></button>
+        <a href="#"  class="header__logo">
+            <img src="/image/Logo/Group.png" alt="Логотип компании">
+        </a>
+        <ul class="header__list">
+            <li class="header-item">
+                <a href="#" class="header__link-call">
+                    <img src="/image/icon/call_icon.svg" alt="Иконка звона по телефону">
+                </a>
+            </li>
+            <li class="header-item">
+                <a href="#" class="header__link-chat">
+                    <img src="/image/icon/chat_icon.svg" alt="Иконка перехода в чат с компанией">
+                </a>
+            </li>
+            <li class="header-item">
+                <a href="#" class="header__link-profile">
+                    <img src="/image/icon/profile_icon.svg" alt="Иконка перехода в личный профиль">
+                </a>
+            </li>
+            <li class="header-item">
+                <a href="#" class="header__link-repair">
+                    <img src="/image/icon/repair_icon.svg" alt="Иконка перехода на форму записи на ремонт">
+                </a>
+            </li>
+            <li class="header-item">
+                <a href="#" class="header__link-checkstatus">
+                    <img src="/image/icon/checkstatus_icon.svg" alt="Иконка перехода на страницу отслеживания статуса заказа">
+                </a>
+            </li>
+        </ul>
+        
+        
+        
     </header>
-    <main>
-
-    </main>
+    <main class="main">
+        <h1 class="main__title">Услуги и сервисы</h1>
+        <nav class="main__nav" aria-label="Основная навигация">
+            <ul class="main__nav-list">
+                <li class="main-nav-item">
+                    <a href="#" class="main__nav-link">Ремонтируемые бренды</a>
+                </li>
+                <li class="main-nav-item">
+                    <a href="#" class="main__nav-link">Ремонтируемые устройства</a>
+                </li>
+                <li class="main-nav-item">
+                    <a href="#" class="main__nav-link">Цены на услуги</a>
+                </li>
+                <li class="main-nav-item">
+                    <a href="#" class="main__nav-link">Адреса сервисных центров</a>
+                </li>
+                <li class="main-nav-item">
+                    <a href="#" class="main__nav-link">пециальные цены</a>
+                </li>
+                <li class="main-nav-item">
+                    <a href="#" class="main__nav-link">Отзывы</a>
+                </li>
+            </ul>
+        </nav>   
+        <article class="article">
+            <p class="article__text">
+                Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
+            </p>
+            <button class="article__button">Читать далее</button>
+            <picture class="article__image">
+                <source srcset="/image/pictures/tablet_pic.jpg" media="(min-width: 768px) and (max-width:1119px)">
+                <source srcset="/image/pictures/desktop_pic.jpg" media="(min-width: 1120px)">
+                <img src="/image/pictures/mobile_pic.jpg" alt="фото логотипа компании на стене">
+            </picture>
+        </article>
+       </main>
     <footer>
 
     </footer>
