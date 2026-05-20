@@ -6,15 +6,18 @@
     <title>Эльдорадость</title>
     <meta keywords="ремонт бытовой техники, обслуживание техники, бытовая техника">
     <meta description="Сервис ремонта и обслуживания бытовой техники">
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="/style/style.css">
+    <link rel="stylesheet" href="/style/header.css">
 </head>
 <body>
     <header class="header">
-        <button class="header__burger"></button>
+        <button class="header__burger" aria-label="Кнопка вызова бокового меню">
+            <img src="/image/icon/burger_icon.svg" alt="">
+        </button>
         <a href="#"  class="header__logo">
             <img src="/image/Logo/Group.png" alt="Логотип компании">
         </a>
-        <ul class="header__list">
+        <ul class="header__list"> <!--Не могу понять как лучше сделать с <aria-label>, повесить его на весь список с пометкой "блок ссылок" или вешать его на каджую ссылку описывая куда она ведет, так как они не подписанны и о их назначении можно судить только по иконкам-->
             <li class="header-item">
                 <a href="#" class="header__link-call">
                     <img src="/image/icon/call_icon.svg" alt="Иконка звона по телефону">
@@ -41,10 +44,9 @@
                 </a>
             </li>
         </ul>
-        
-        
-        
     </header>
+
+
     <main class="main">
         <h1 class="main__title">Услуги и сервисы</h1>
         <nav class="main__nav" aria-label="Основная навигация">

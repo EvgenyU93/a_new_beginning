@@ -1,0 +1,71 @@
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.header__burger {
+    appearance: none;
+    border: none;
+    background: transparent;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 0;
+    margin: 0;
+    font: inherit;
+    line-height: inherit;
+    letter-spacing: normal;
+    text-transform: none;
+    color: inherit;
+
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 62, 121, 1);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.header__logo {
+
+
+}
+
+.header__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+
+}
+
+.header-item {
+
+
+}
+
+.header__link-call {
+
+
+}
+
+.header__link-chat {
+
+
+}
+
+.header__link-profile {
+
+
+}
+
+.header__link-repair {
+
+
+}
+
+.header__link-checkstatus {
+
+
+}
