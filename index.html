@@ -6,44 +6,45 @@
     <title>Эльдорадость</title>
     <meta keywords="ремонт бытовой техники, обслуживание техники, бытовая техника">
     <meta description="Сервис ремонта и обслуживания бытовой техники">
-    <link rel="stylesheet" href="/style/style.css">
+    <link rel="stylesheet" href="/style/variables.css">
+    <link rel="stylesheet" href="/style/global.css">
     <link rel="stylesheet" href="/style/header.css">
+   
 </head>
 <body>
     <header class="header">
-        <button class="header__burger" aria-label="Кнопка вызова бокового меню">
+        <div class="header__wrapper-1">
+        <button class="header__button-burger" aria-label="Кнопка вызова бокового меню">
             <img src="/image/icon/burger_icon.svg" alt="">
         </button>
-        <a href="#"  class="header__logo">
+        <div class="header__separator-1"></div>
+        <button  class="header__button-logo" id="header__logo">
             <img src="/image/Logo/Group.png" alt="Логотип компании">
-        </a>
-        <ul class="header__list"> <!--Не могу понять как лучше сделать с <aria-label>, повесить его на весь список с пометкой "блок ссылок" или вешать его на каджую ссылку описывая куда она ведет, так как они не подписанны и о их назначении можно судить только по иконкам-->
-            <li class="header-item">
-                <a href="#" class="header__link-call">
-                    <img src="/image/icon/call_icon.svg" alt="Иконка звона по телефону">
-                </a>
-            </li>
-            <li class="header-item">
-                <a href="#" class="header__link-chat">
-                    <img src="/image/icon/chat_icon.svg" alt="Иконка перехода в чат с компанией">
-                </a>
-            </li>
-            <li class="header-item">
-                <a href="#" class="header__link-profile">
-                    <img src="/image/icon/profile_icon.svg" alt="Иконка перехода в личный профиль">
-                </a>
-            </li>
-            <li class="header-item">
-                <a href="#" class="header__link-repair">
-                    <img src="/image/icon/repair_icon.svg" alt="Иконка перехода на форму записи на ремонт">
-                </a>
-            </li>
-            <li class="header-item">
-                <a href="#" class="header__link-checkstatus">
-                    <img src="/image/icon/checkstatus_icon.svg" alt="Иконка перехода на страницу отслеживания статуса заказа">
-                </a>
-            </li>
-        </ul>
+        </button>
+        </div>
+        <div class="header__batton__hiden">
+            <button class="header__button-call" aria-label="Кнопка телефонного звонка">
+                <img src="/image/icon/call_icon.svg" alt="Иконка звона по телефону">
+            </button>
+                
+            <button class="header__button-chat" aria-label="Кнопка перехода в чат с компанией">
+                 <img src="/image/icon/chat_icon.svg" alt="Иконка перехода в чат с компанией">
+            </button>
+                   
+            <button class="header__button-profile" aria-label="Кнопка перехода в личный профиль">
+                <img src="/image/icon/profile_icon.svg" alt="Иконка перехода в личный профиль">
+            </button> 
+        </div>
+        <div class="header__wrapper-2">
+        <div class="header__separator-2"></div>
+        <button class="header__button-repair" aria-label="Кнопка перехода к форме записи на ремонт">
+            <img src="/image/icon/repair_icon.svg" alt="Иконка перехода на форму записи на ремонт">
+        </button>
+            
+        <button class="header__button-checkstatus" aria-label="кнопка перехода к форме отслеживания статуса заказа">
+            <img src="/image/icon/checkstatus_icon.svg" alt="Иконка перехода на страницу отслеживания статуса заказа">
+        </button>
+        </div>
     </header>
 
 

@@ -1,12 +1,14 @@
 
 .header {
     width: 100%;
+    height: 88px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
 
 }
 
-.header__burger {
+button {
     appearance: none;
     border: none;
     background: transparent;
@@ -20,52 +22,104 @@
     text-transform: none;
     color: inherit;
 
+    
+}
+
+.header button {
     width: 40px;
     height: 40px;
-    background-color: rgba(255, 62, 121, 1);
+    background-color: var(--button-color);
     border-radius: 50%;
     cursor: pointer;
+
+    /*
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    */
 }
 
-.header__logo {
-
-
-}
-
-.header__list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-
-
-}
-
-.header-item {
-
+.header img {
+    
 
 }
 
-.header__link-call {
-
-
-}
-
-.header__link-chat {
-
+.header__button-burger {
+    margin-left: 16px;
 
 }
 
-.header__link-profile {
+ #header__logo {
+    background-color: transparent;
+    width: 96px;
+    height: 50px;
+    margin-left: 16px;
+ }
+ 
+ .header__separator-1, .header__separator-2  {
+    width: 2px;
+    height: 32px;
+    background-color: rgba(234, 234, 234, 1);
+ }
 
+.header__batton__hiden, .header__separator-1 {
+    display: none;
+}
+
+.header__button-repair {
+    margin-left: 18px;
+    margin-right: 18px;
+    
+}
+
+.header__button-checkstatus {
+    margin-right: 16px;
 
 }
 
-.header__link-repair {
-
-
+.header__wrapper-1 {
+    display: flex;
+    align-items: center;
 }
 
-.header__link-checkstatus {
+.header__wrapper-2 {
+    display: flex;
+    align-items: center;
+}
 
 
+
+@media (min-width: 768px) {
+    .header__batton__hiden  {
+       display: flex;
+       margin-left: auto;
+
+
+    }
+
+    .header__separator-1 {
+        display: block;
+        margin-left: 20px;
+        
+    }
+
+    #header__logo {
+        margin-left: 20px;
+
+    }
+
+    .header__button-call {
+        margin-right: 16px;
+
+    }
+
+    .header__button-chat {
+        margin-right: 16px;
+
+    }
+
+    .header__button-profile {
+        margin-right: 20px;
+
+    }
 }
