@@ -1,4 +1,7 @@
 :root {
     --button-color:rgba(255, 62, 121, 1);
-
+    --button-color-active: rgba(223, 34, 92, 1);
+    --highlight-color:rgba(65, 246, 215, 1);
+    --text-color:rgba(27, 28, 33, 1);
+    
 }

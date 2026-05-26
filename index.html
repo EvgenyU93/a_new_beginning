@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="/style/variables.css">
     <link rel="stylesheet" href="/style/global.css">
     <link rel="stylesheet" href="/style/header.css">
+    <link rel="stylesheet" href="/style/nav.css">
+    <link rel="stylesheet" href="/style/article.css">
    
 </head>
 <body>
@@ -23,13 +25,13 @@
         </button>
         </div>
         <div class="header__batton__hiden">
-            <button class="header__button-call" aria-label="Кнопка телефонного звонка">
+        <button class="header__button-call" aria-label="Кнопка телефонного звонка">
                 <img src="/image/icon/call_icon.svg" alt="Иконка звона по телефону">
-            </button>
+        </button>
                 
-            <button class="header__button-chat" aria-label="Кнопка перехода в чат с компанией">
+        <button class="header__button-chat" aria-label="Кнопка перехода в чат с компанией">
                  <img src="/image/icon/chat_icon.svg" alt="Иконка перехода в чат с компанией">
-            </button>
+        </button>
                    
             <button class="header__button-profile" aria-label="Кнопка перехода в личный профиль">
                 <img src="/image/icon/profile_icon.svg" alt="Иконка перехода в личный профиль">
@@ -49,34 +51,49 @@
 
 
     <main class="main">
-        <h1 class="main__title">Услуги и сервисы</h1>
+        <div  class="main__title">
+        <h1>Услуги и сервисы</h1>
+        </div>
         <nav class="main__nav" aria-label="Основная навигация">
             <ul class="main__nav-list">
-                <li class="main-nav-item">
+                <li class="main__nav-item">
                     <a href="#" class="main__nav-link">Ремонтируемые бренды</a>
                 </li>
-                <li class="main-nav-item">
+                <li class="main__nav-item">
                     <a href="#" class="main__nav-link">Ремонтируемые устройства</a>
                 </li>
-                <li class="main-nav-item">
+                <li class="main__nav-item">
                     <a href="#" class="main__nav-link">Цены на услуги</a>
                 </li>
-                <li class="main-nav-item">
+                <li class="main__nav-item">
                     <a href="#" class="main__nav-link">Адреса сервисных центров</a>
                 </li>
-                <li class="main-nav-item">
+                <li class="main__nav-item">
                     <a href="#" class="main__nav-link">пециальные цены</a>
                 </li>
-                <li class="main-nav-item">
+                <li class="main__nav-item">
                     <a href="#" class="main__nav-link">Отзывы</a>
                 </li>
             </ul>
         </nav>   
         <article class="article">
-            <p class="article__text">
-                Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
-            </p>
-            <button class="article__button">Читать далее</button>
+            <div class="article__text-block">
+                <p class="article__text">
+                    Мы являемся авторизованным сервисным центром по ремонту техники Dell. 
+                    Только у нас вы можете отремонтировать свой ноутбук Dell 
+                    с официальной гарантией производителя.
+                </p>
+                <p class="article__text">    
+                    Мы успешно работаем с 1992 года и заслужили репутацию надежного 
+                    партнера, что подтверждает большое количество постоянных клиентов. 
+                    Мы гордимся тем, что к нам обращаются по рекомендациям и, 
+                    в свою очередь, советуют нас родным и близким.
+                </p>
+            </div>
+            
+            <div class="article__readmore-block">
+            <button class="article__button-readmore">Читать далее</button>
+            </div>
             <picture class="article__image">
                 <source srcset="/image/pictures/tablet_pic.jpg" media="(min-width: 768px) and (max-width:1119px)">
                 <source srcset="/image/pictures/desktop_pic.jpg" media="(min-width: 1120px)">
