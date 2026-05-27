@@ -75,7 +75,7 @@ button {
     background-color: rgba(234, 234, 234, 1);
  }
 
-.header__batton__hiden, .header__separator-1 {
+.header__button__hiden, .header__separator-1 {
     display: none;
 }
 
@@ -103,7 +103,7 @@ button {
 
 
 @media (min-width: 768px) {
-    .header__batton__hiden  {
+    .header__button__hiden  {
        display: flex;
        margin-left: auto;
 
@@ -135,4 +135,14 @@ button {
         margin-right: 20px;
 
     }
+}
+
+@media (min-width: 1120px) {
+    .header {
+        display: none;
+
+    }
+
+
+
 }

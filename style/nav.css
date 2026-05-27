@@ -5,10 +5,10 @@
 
 .main__title {
     display: flex;
-    width: 304;
+   
     height: 40px;
     position: relative;
-    margin-right: 16px;
+    margin-right: 21px;
     margin-bottom: 24px;
     
 }
@@ -34,6 +34,10 @@
     
     width: 288px;
     height: 40px;
+}
+
+.main__button-block {
+    display: none;
 }
 
 .main__nav {
@@ -88,4 +92,135 @@
         margin-bottom: 32px;
     }
 
+}
+
+@media (min-width:1120px) {
+    .main {
+        padding-top: 41px;
+
+    }
+
+    .main__title {
+        margin-bottom: 8px;
+
+    }
+
+    .main__title h1 {
+        margin-left: 30px;
+    }
+
+    .main__title::before {
+        width: 3px;
+        height: 40px;
+        
+        border-radius: 4px;
+        left:0px;
+    }
+
+
+    .main__button-block {
+        display: block;
+        
+        width: 380px;
+        height: 40px;
+        margin-left: auto;
+
+        display: flex;
+        justify-content: flex-end;
+        
+    }
+
+
+
+    .main__button-repair, .main__button-checkstatus {
+        width: 40px;
+        height: 40px;
+        background-color: var(--button-color);
+        border-radius: 50%;
+        cursor: pointer;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    
+    .main__button-repair {
+        margin-right: 160px;
+        position: relative;
+
+    }
+
+    .main__button-repair:hover {
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        transform: translateY(-1px);
+
+    }
+
+    .main__button-repair:active {
+        background-color: var(--button-color-active);
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        transform: scale(0.95) translateY(0);
+    }
+
+    .main__button-repair::before {
+        content: "Оставить заявку";
+        white-space: nowrap;
+        position: absolute;
+        
+        width: 125px;
+        height: 24px;
+        transform: translateX(-98px);
+        
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: -0.01em;
+        text-align: right;
+        color: #1b1c21;
+
+    }
+
+    .main__button-checkstatus {
+        position: relative;
+    }
+
+    .main__button-checkstatus:hover {
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        transform: translateY(-1px);
+
+    }
+
+    .main__button-checkstatus:active {
+        background-color: var(--button-color-active);
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        transform: scale(0.95) translateY(0);
+    }
+
+    .main__button-checkstatus::before {
+        content: "Статус ремонта";
+        white-space: nowrap;
+        position: absolute;
+        
+        width: 119px;
+        height: 24px;
+        transform: translateX(-90px);
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: -0.01em;
+        text-align: right;
+        color: #1b1c21;
+
+    }
+
+    .main__nav {
+        margin-left: 33px;
+        margin-bottom: 7px;
+    }
+
+    .main__nav-list {
+        flex-wrap: wrap;
+        
+    }
 }

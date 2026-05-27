@@ -51,16 +51,24 @@ article p:not(:first-child) {
     
 }
 
+.main__content {
+    height: 100px;
+
+}
+
 @media (min-width:768px) {
     .article {
         flex-wrap: wrap;
         max-height: 208px;
         margin-left: 24px;
+        margin-right: 25px;
     }
 
     .article__text-block {
         max-width: 312px;
         height: 160px;
+        margin:0;
+        margin-right: auto;
        
     }
 
@@ -70,4 +78,42 @@ article p:not(:first-child) {
         line-height: 143%;
         letter-spacing: 0.01em;
     }
+
+    .article__readmore-block {
+        margin: 0;
+        margin-top: 10px;;
+
+    }
+
+    .article__image {
+        height: 208px;
+    }
+}
+
+@media (min-width: 1120px) {
+    .article {
+        min-height: 307px;
+       
+        margin-left: 35px;
+        margin-right: 21px;
+    }
+
+    .article__text-block {
+        min-width: 312px;
+        max-width: 490px;
+        height: 160px;
+        margin:0;
+        margin-right: auto;
+       
+    }
+
+    .article__readmore-block {
+        margin-top: 13px;;
+    }
+
+    .article__image {
+        width: 532px;
+        height: 307px;
+    }
+
 }
