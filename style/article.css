@@ -27,27 +27,42 @@ article p:not(:first-child) {
 
 .article__readmore-block {
     align-self: flex-start;
+    
     width: 132px;
     height: 24px;
     margin-left: 16px;
     margin-top: 16px;
     margin-bottom: 16px;
 
-    display: flex;
+    display: inline-flex;
+    align-items: center;
     
 }
 
 .article__button-readmore {
+    display: inline-flex;
+    align-items: center;
+
     white-space: nowrap;
     cursor: pointer;
+    
+   
 }
 
 .article__button-readmore::before {
-    content: url(/image/icon/readmore-icon.svg);
-    width: 24px;
-    height: 24px;
+    content: " ";
+    display: inline-block;
+    flex-shrink: 0;
+    width: 8px;
+    height: 10px;
     margin-left: 8px;
     margin-right: 16px;
+
+    background-image: url("/image/icon/readmore-icon.svg");
+    
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
     
 }
 

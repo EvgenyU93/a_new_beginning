@@ -1,5 +1,4 @@
 .main {
-    background-color:rgba(248, 248, 248, 1);
     padding-top: 24px;
 }
 
@@ -38,6 +37,19 @@
 
 .main__button-block {
     display: none;
+}
+
+.main__nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+  .main__nav-link {
+    color: inherit;
+    text-decoration: none;
+    background: transparent;
+    cursor: pointer;
 }
 
 .main__nav {
