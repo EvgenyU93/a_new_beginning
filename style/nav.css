@@ -54,6 +54,7 @@
 
 .main__nav {
     overflow-x: auto;
+    scrollbar-width: none;
     margin-left: 16px;
     margin-bottom: 24px;
 
