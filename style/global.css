@@ -32,7 +32,12 @@ button {
   letter-spacing: normal;
   text-transform: none;
   
-
+}
   
+.limiting-wrapper {
+  max-width: 1130px;
+  width: 100%;
+  margin-inline: auto;
+
 }
 
