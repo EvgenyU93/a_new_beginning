@@ -5,10 +5,17 @@
   
 }
 
+html {
+  scrollbar-gutter: stable;
+  overflow-y: auto;
+
+}
+
 body {
     margin: 0px;
     font-family: "TT Lakes", sans-serif;
     background-color: var(--page-background-color);
+    
 }
 
 h1 {
@@ -38,6 +45,10 @@ button {
   max-width: 1130px;
   width: 100%;
   margin-inline: auto;
+  position: relative;
+  z-index: 1;
+ 
+  
 
 }
 

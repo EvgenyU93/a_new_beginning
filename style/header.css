@@ -11,7 +11,7 @@
 }
 
 
-.header button {
+.header .button {
     width: 40px;
     height: 40px;
     background-color: var(--button-color);
@@ -25,12 +25,12 @@
 
 
 
-.header button:hover {
+.header .button:hover:not() {
     box-shadow: 0 4px 12px var(--shadow-hover);
     transform: translateY(-1px);
 }
 
-.header button:active {
+.header .button:active {
     background-color: var(--button-color-active);
     box-shadow: 0 2px 6px var(--shadow-active);
     transform: scale(0.95) translateY(0);
@@ -78,6 +78,13 @@
 .header__wrapper {
     display: flex;
     align-items: center;
+}
+
+
+.header__button-burger:hover ~ .pop-up-menu {
+    transform: translateX(320px);
+    transform: translateY(455px);
+
 }
 
 
