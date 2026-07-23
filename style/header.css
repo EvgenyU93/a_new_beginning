@@ -24,7 +24,6 @@
 }
 
 
-
 .header .button:hover:not() {
     box-shadow: 0 4px 12px var(--shadow-hover);
     transform: translateY(-1px);
@@ -79,14 +78,6 @@
     display: flex;
     align-items: center;
 }
-
-
-.header__button-burger:hover ~ .pop-up-menu {
-    transform: translateX(320px);
-    transform: translateY(455px);
-
-}
-
 
 
 
