@@ -1,0 +1,13 @@
+:root {
+    --page-background-color:rgba(248, 248, 248, 1);
+    --header-background-color:white;
+    --button-color:rgba(255, 62, 121, 1);
+    --button-color-active: rgba(223, 34, 92, 1);
+    --highlight-color:rgba(65, 246, 215, 1);
+    --border-color:rgba(217, 255, 245, 1);
+    --text-color:rgba(27, 28, 33, 1);
+    --shadow-hover:rgba(0, 0, 0, 0.08);
+    --shadow-active:rgba(0, 0, 0, 0.1);
+    --separator-color:rgba(234, 234, 234, 1);
+}
+

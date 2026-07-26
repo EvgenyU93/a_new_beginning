@@ -1,0 +1,239 @@
+.main {
+    padding-top: 24px;
+}
+
+.main__title {
+    display: flex;
+   
+    height: 40px;
+    position: relative;
+    margin-right: 21px;
+    margin-bottom: 24px;
+    
+}
+
+.main__title::before {
+    content: " ";
+    width: 8px;
+    height: 40px;
+    background-color: var(--highlight-color);
+    border-radius: 8px;
+    position: absolute;
+    left: -4px;
+}
+
+.main__title h1 {
+    margin-left: 16px;
+    
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 143%;
+    letter-spacing: -0.02em;
+    color: var(--text-color);
+    
+    width: 288px;
+    height: 40px;
+}
+
+.main__button-block {
+    display: none;
+}
+
+.main__nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+  .main__nav-link {
+    color: inherit;
+    text-decoration: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.main__nav {
+    overflow-x: auto;
+    scrollbar-width: none;
+    margin-left: 16px;
+    margin-bottom: 24px;
+
+}
+
+.main__nav-list {
+    display: flex;
+    
+}
+
+.main__nav-item {
+    flex-shrink: 0;
+}
+
+.main__nav-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    padding: 0 16px;
+    white-space: nowrap;
+
+    
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: -0.01em;
+    color: #7e7e82;
+    border-radius: 6px;
+
+}
+
+.main__nav-link:hover{
+    box-shadow: inset 0 0 0 2px #b8ffec;
+}
+
+@media (min-width: 768px) {
+    .main__title {
+        margin-bottom: 32px;
+    }
+
+    .main__title h1 {
+        margin-left: 24px;
+    }
+
+    .main__nav {
+        margin-left: 24px;
+        margin-bottom: 32px;
+    }
+
+}
+
+@media (min-width:1120px) {
+    .main {
+        padding-top: 41px;
+
+    }
+
+    .main__title {
+        margin-bottom: 8px;
+
+    }
+
+    .main__title h1 {
+        margin-left: 30px;
+    }
+
+    .main__title::before {
+        width: 3px;
+        height: 40px;
+        
+        border-radius: 4px;
+        left:0px;
+    }
+
+
+    .main__button-block {
+        display: block;
+        
+        width: 380px;
+        height: 40px;
+        margin-left: auto;
+
+        display: flex;
+        justify-content: flex-end;
+        
+    }
+
+
+
+    .main__button-repair, .main__button-checkstatus {
+        width: 40px;
+        height: 40px;
+        background-color: var(--button-color);
+        border-radius: 50%;
+        cursor: pointer;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    
+    .main__button-repair {
+        margin-right: 160px;
+        position: relative;
+
+    }
+
+    .main__button-repair:hover {
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        transform: translateY(-1px);
+
+    }
+
+    .main__button-repair:active {
+        background-color: var(--button-color-active);
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        transform: scale(0.95) translateY(0);
+    }
+
+    .main__button-repair::before {
+        content: "Оставить заявку";
+        white-space: nowrap;
+        position: absolute;
+        
+        width: 125px;
+        height: 24px;
+        transform: translateX(-98px);
+        
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: -0.01em;
+        text-align: right;
+        color: #1b1c21;
+
+    }
+
+    .main__button-checkstatus {
+        position: relative;
+    }
+
+    .main__button-checkstatus:hover {
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        transform: translateY(-1px);
+
+    }
+
+    .main__button-checkstatus:active {
+        background-color: var(--button-color-active);
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        transform: scale(0.95) translateY(0);
+    }
+
+    .main__button-checkstatus::before {
+        content: "Статус ремонта";
+        white-space: nowrap;
+        position: absolute;
+        
+        width: 119px;
+        height: 24px;
+        transform: translateX(-90px);
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: -0.01em;
+        text-align: right;
+        color: #1b1c21;
+
+    }
+
+    .main__nav {
+        margin-left: 33px;
+        margin-bottom: 7px;
+    }
+
+    .main__nav-list {
+        flex-wrap: wrap;
+        
+    }
+}
