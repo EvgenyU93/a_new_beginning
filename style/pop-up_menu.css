@@ -101,6 +101,7 @@
     line-height: 150%;
     letter-spacing: -0.01em;
     color: #7e7e82;
+    position: relative;
 }
 
 .link--active::before {
@@ -114,7 +115,7 @@
 
 }
 
-.pop-up-menu__fotter {
+.pop-up-menu__footer {
     margin-top: auto;
 
 }
